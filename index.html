@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>DMS1 A2 Emelie</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body style="background-color: #1b095e;"> 
+        <div class="row">
+            <div id="spacecity" class="image-container"><img src="img/space.png" height="200" width="220"/></div>
+            <div id="robot" class="image-container"><img src="img/robot.png" height="200" width="220"/></div>
+            <div id="gun" class="image-container"><img src="img/gun.png" height="200" width="230"/></div>
+        </div>
+
+        <div class="row">
+            <div id="vr" class="image-container"><img src="img/vr.png" height="200" width="220"/></div>
+            <div id="car" class="image-container"><img src="img/car.png" height="200" width="220"/></div>
+            <div id="rocket" class="image-container"><img src="img/rocket.png" height="200" width="220"/></div>
+            </div>
+
+        <div class="row">
+            <div id="float" class="image-container"><img src="img/float.png" height="200" width="220"/></div>
+            <div id="alien" class="image-container"><img src="img/alien.png" height="200" width="220"/></div>
+            <div id="holo" class="image-container"><img src="img/holo.png" height="200" width="220"/></div>
+        </div>
+        
+        <script> 
+            var sound1 = new buzz.sound("sound/ufo.wav");
+            var sound2 = new buzz.sound("sound/hologram2.wav");
+            var sound3 = new buzz.sound("sound/spacegun_01.wav");
+            var sound4 = new buzz.sound("sound/robot.wav");
+            var sound5 = new buzz.sound("sound/hov.wav");
+            var sound6 = new buzz.sound("sound/car_01.wav");
+            var sound7 = new buzz.sound("sound/rocketfly_01.wav");
+            var sound8 = new buzz.sound("sound/vrr.wav");
+            var sound9 = new buzz.sound("sound/scity_01.wav");
+
+            window.onload = function () {
+                document.getElementById('alien').addEventListener('click', function () {sound1.play();});
+                document.getElementById('holo').addEventListener('click', function () {sound2.play();});
+                document.getElementById('gun').addEventListener('click', function () {sound3.play();});
+                document.getElementById('robot').addEventListener('click', function () {sound4.play();});
+                document.getElementById('float').addEventListener('click', function () {sound5.play();});
+                document.getElementById('car').addEventListener('click', function () {sound6.play();});
+                document.getElementById('rocket').addEventListener('click', function () {sound7.play();});
+                document.getElementById('vr').addEventListener('click', function () {sound8.play();});
+                document.getElementById('spacecity').addEventListener('click', function () {sound9.play();});
+            };
+        </script>
+   
+</body>
+    
+</html>
+
